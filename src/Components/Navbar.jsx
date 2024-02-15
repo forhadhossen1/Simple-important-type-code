@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import logo from "../assets/F logo.png";
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,13 +11,13 @@ const Navbar = () => {
 
     return (
         <div>
-            <nav className="bg-slate-800 border-gray-200 dark:bg-gray-900">
+            <nav className=" bg-gray-800 border-gray-200 dark:bg-gray-900">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                     <a href="" className="flex items-center space-x-3 rtl:space-x-reverse">
-                        <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Flowbite Logo" />
-                        <span className="self-center text-2xl text-white font-semibold whitespace-nowrap dark:text-white">Forhad</span>
+                        <img src={logo} className="h-8" alt="portfolio Logo" />
+                        <span className="self-center text-2xl text-white font-semibold whitespace-nowrap dark:text-white">Forhad | Js Dev</span>
                     </a>
-                    
+
                     <button
                         onClick={toggleMenu}
                         type="button"
