@@ -1,10 +1,13 @@
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
+import {style} from "../styles";
+import {ComputersCanvas} from "./Canvas";
+import { j } from "vite/dist/node/types.d-jgA8ss1A";
 
 const Hero = () => {
     return (
-        <div>
-            Yesh I am hero section
-        </div>
+       <section>
+
+       </section>
     );
 };
 
